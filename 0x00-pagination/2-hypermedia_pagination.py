@@ -5,17 +5,16 @@ Helper functions and class for hypermedia pagination
 
 import csv
 import math
-from typing import List, Union
+from typing import List, Tuple
 
 
-def index_range(page: int, page_size: int) -> tuple[int, int]:
-    """
-    Returns a tuple of start and end index for pagination.
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """Calculate start and end indexes for pagination.
     Args:
         page: An integer representing the current page (1-indexed).
         page_size: An integer representing the number of items per page.
     Returns:
-        A tuple of two integers representing start & end index for pagination.
+        A tuple of 2 integers representing start & end indexes for pagination.
     """
     if page <= 0 or page_size <= 0:
         raise ValueError("Page and page size must be positive integers.")
