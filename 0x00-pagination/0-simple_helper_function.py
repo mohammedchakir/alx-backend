@@ -2,6 +2,7 @@
 """
 Helper function for pagination
 """
+from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> tuple[int, int]:
@@ -13,10 +14,5 @@ def index_range(page: int, page_size: int) -> tuple[int, int]:
     Returns:
         A tuple of two integers representing start & end index for pagination.
     """
-    if page <= 0 or page_size <= 0:
-        raise ValueError("Page and page size must be positive integers.")
 
-    start_index = (page - 1) * page_size
-    end_index = start_index + page_size
-
-    return start_index, end_index
+    return ((page-1) * page_size, page_size * page)
