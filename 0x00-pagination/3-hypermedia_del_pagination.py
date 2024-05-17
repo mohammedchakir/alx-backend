@@ -57,8 +57,12 @@ class Server:
             be a positive integer"
 
         next_index = index + page_size if index is not None else 0
-        data = [self.__indexed_dataset[i] for i in range(
-            index, min(index + page_size, len(self.__indexed_dataset)))]
+        data = []
+        for i in range(index, min(index + page_size,
+                                  len(self.__indexed_dataset))):
+            row = self.__indexed_dataset.get(i)
+            if row:
+                data.append(row)
 
         return {
             'index': index,
