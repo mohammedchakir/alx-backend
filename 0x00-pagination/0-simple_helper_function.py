@@ -14,5 +14,6 @@ def index_range(page: int, page_size: int) -> tuple[int, int]:
     Returns:
         A tuple of two integers representing start & end index for pagination.
     """
-
-    return ((page-1) * page_size, page_size * page)
+    start_index = (page - 1) * page_size
+    end_index = page * page_size
+    return (start_index, end_index)
