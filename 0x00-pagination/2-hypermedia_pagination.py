@@ -89,15 +89,3 @@ class Server:
             'prev_page': prev_page,
             'total_pages': total_pages
         }
-
-
-if __name__ == "__main__":
-    server = Server()
-
-    print(server.get_hyper(1, 2))
-    print("---")
-    print(server.get_hyper(2, 2))
-    print("---")
-    print(server.get_hyper(100, 3))
-    print("---")
-    print(server.get_hyper(3000, 100))
