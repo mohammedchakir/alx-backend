@@ -16,6 +16,7 @@ class LFUCache(BaseCaching):
         """
         super().__init__()
         self.frequency = {}
+        self.queue = []
 
     def put(self, key, item):
         """
@@ -35,9 +36,11 @@ class LFUCache(BaseCaching):
                 print("DISCARD:", lru_key)
                 self.cache_data[key] = item
                 self.frequency[key] = 1
+                self.queue.append(key)
             else:
                 self.cache_data[key] = item
                 self.frequency[key] = 1
+                self.queue.append(key)
 
     def get(self, key):
         """
