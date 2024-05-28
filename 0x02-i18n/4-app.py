@@ -9,7 +9,7 @@ from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
-class Config:
+class Config(object):
     """
     Config class to hold configuration for the Flask app.
     """
@@ -20,7 +20,7 @@ class Config:
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
+app.url_map.strict_slashes = False
 babel = Babel(app)
 
 
@@ -31,7 +31,8 @@ def get_locale():
     'Accept-Language' headers or the 'locale' URL parameter.
     """
     locale = request.args.get('locale')
-    if locale and locale in app.config['LANGUAGES']:
+    if locale in app.config['LANGUAGES']:
+        print(locale)
         return locale
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 

@@ -8,7 +8,7 @@ from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
-class Config:
+class Config(object):
     """
     Config class for Flask app configuration.
     """
@@ -19,7 +19,7 @@ class Config:
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
+app.url_map.strict_slashes = False
 babel = Babel(app)
 
 

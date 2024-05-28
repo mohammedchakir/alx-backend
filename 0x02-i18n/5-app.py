@@ -6,10 +6,10 @@ on login state.
 """
 
 from flask import Flask, render_template, request, g
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 
-class Config:
+class Config(object):
     """
     Config class to hold configuration for the Flask app.
     """
@@ -20,7 +20,7 @@ class Config:
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
+app.url_map.strict_slashes = False
 babel = Babel(app)
 
 users = {
@@ -36,20 +36,20 @@ def get_user():
     Returns a user dictionary or None if the ID cannot be found or if
     login_as was not passed.
     """
-    try:
-        user_id = int(request.args.get('login_as'))
-        return users.get(user_id)
-    except (TypeError, ValueError):
-        return None
+    login_id = request.args.get('login_as')
+    if login_id:
+        return users.get(int(login_id))
+    return None
 
 
 @app.before_request
-def before_request():
+def before_request() -> None:
     """
     Finds a user if any, and sets it as a global on flask.g.user before
     each request.
     """
-    g.user = get_user()
+    user = get_user()
+    g.user = user
 
 
 @babel.localeselector
@@ -59,11 +59,9 @@ def get_locale():
     'Accept-Language' headers or the 'locale' URL parameter,
     or the user's preferred locale.
     """
-    user = g.get('user')
-    if user and user['locale'] in app.config['LANGUAGES']:
-        return user['locale']
     locale = request.args.get('locale')
     if locale in app.config['LANGUAGES']:
+        print(locale)
         return locale
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
