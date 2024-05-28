@@ -167,11 +167,9 @@ In your HTML template, if a user is logged in, in a paragraph tag, display a wel
 | `logged_in_as` | `"You are logged in as %(username)s."` | `"Vous êtes connecté en tant que %(username)s."` |
 | `not_logged_in` | `"You are not logged in."` | `"Vous n'êtes pas connecté."` |
 
-**Visiting `http://127.0.0.1:5000/` in your browser should display this:**
-<img width="213" alt="2c5b2c8190f88c6b4668" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/dd0533d4-0a71-4077-a074-d90237d9e39c">
+**Visiting `http://127.0.0.1:5000/` in your browser should display this:** <img width="213" alt="2c5b2c8190f88c6b4668" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/dd0533d4-0a71-4077-a074-d90237d9e39c">
 
-**Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this:**
-<img width="259" alt="277f24308c856a09908c" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/c15e2892-083f-4b11-8a1d-ad7562cd7499">
+**Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this:** <img width="259" alt="277f24308c856a09908c" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/c15e2892-083f-4b11-8a1d-ad7562cd7499">
 
 
 -   File: `5-app.py, templates/5-index.html`
@@ -190,9 +188,7 @@ The order of priority should be
 3.  Locale from request header
 4.  Default locale
 
-Test by logging in as different users
-
-<img width="272" alt="9941b480b0b9d87dc5de" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/17b63a0f-dd4b-4a2e-a39e-390613c34ce6">
+Test by logging in as different users <img width="272" alt="9941b480b0b9d87dc5de" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/17b63a0f-dd4b-4a2e-a39e-390613c34ce6">
 
 -   File: `6-app.py, templates/6-index.html`
 
@@ -227,12 +223,8 @@ Use the following translations
 | msgid | English | French |
 | `current_time_is` | `"The current time is %(current_time)s."` | `"Nous sommes le %(current_time)s."` |
 
-**Displaying the time in French looks like this:**
+**Displaying the time in French looks like this:** <img width="299" alt="bba4805d6dca0a46a0f6" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/c47fcb7c-b3c6-4b12-bb13-76277fa8cbf4">
 
-<img width="299" alt="bba4805d6dca0a46a0f6" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/c47fcb7c-b3c6-4b12-bb13-76277fa8cbf4">
-
-**Displaying the time in English looks like this:**
-
-<img width="328" alt="54f3be802024dbcf06f4" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/2dd31436-e9de-4e16-95c6-420929a0c4e8">
+**Displaying the time in English looks like this:** <img width="328" alt="54f3be802024dbcf06f4" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/2dd31436-e9de-4e16-95c6-420929a0c4e8">
 
 -   File: `app.py, templates/index.html, translations/en/LC_MESSAGES/messages.po, translations/fr/LC_MESSAGES/messages.po`
