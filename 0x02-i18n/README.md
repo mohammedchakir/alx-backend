@@ -4,8 +4,7 @@
 
 By Emmanuel Turlay, Staff Software Engineer at Cruise
 
-
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/91e1c50322b2428428f9.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2e1c71f81935aa0b1879e6f3a2a469efebb53dae801d62591f9cc4ba9a63a02c)
+![91e1c50322b2428428f9](https://github.com/mohammedchakir/alx-backend/assets/129831433/b117194d-c180-42ea-9d1b-c2bfea1cae40)
 
 ## Resources:
 
@@ -135,7 +134,7 @@ In your `get_locale` function, detect if the incoming request contains `local
 
 Now you should be able to test different translations by visiting `http://127.0.0.1:5000?locale=[fr|en]`.
 
-**Visiting `http://127.0.0.1:5000/?locale=fr` should display this level 1 heading:** ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/f958f4a1529b535027ce.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9b67dd8c671452469476255ea5d70325bb8a073061b5b0b924973219f33823f6)
+**Visiting `http://127.0.0.1:5000/?locale=fr` should display this level 1 heading:** <img width="254" alt="f958f4a1529b535027ce" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/31f4bae2-8e5f-46fc-a040-61f282639c02">
 
 -   File: `4-app.py, templates/4-index.html`
 
@@ -169,10 +168,10 @@ In your HTML template, if a user is logged in, in a paragraph tag, display a wel
 | `not_logged_in` | `"You are not logged in."` | `"Vous n'êtes pas connecté."` |
 
 **Visiting `http://127.0.0.1:5000/` in your browser should display this:**
+<img width="213" alt="2c5b2c8190f88c6b4668" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/dd0533d4-0a71-4077-a074-d90237d9e39c">
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/2c5b2c8190f88c6b4668.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=58edc296f4010cf9bfbfad1a6669eeaa6a98b680439961e01f247fa3ac924c19)
-
-**Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this:** ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/277f24308c856a09908c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bb18ed9baad90f89a6fa63543b018f6d809d4373c41c1577a663307f470e6076)
+**Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this:**
+<img width="259" alt="277f24308c856a09908c" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/c15e2892-083f-4b11-8a1d-ad7562cd7499">
 
 
 -   File: `5-app.py, templates/5-index.html`
@@ -193,7 +192,7 @@ The order of priority should be
 
 Test by logging in as different users
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/9941b480b0b9d87dc5de.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e29f75603ea97df0271235991a3063e4f64f6cfee5cebcec00042b8d26caf94e)
+<img width="272" alt="9941b480b0b9d87dc5de" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/17b63a0f-dd4b-4a2e-a39e-390613c34ce6">
 
 -   File: `6-app.py, templates/6-index.html`
 
@@ -230,10 +229,10 @@ Use the following translations
 
 **Displaying the time in French looks like this:**
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bba4805d6dca0a46a0f6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a2be8af37e110fd52f4afe7fef1fdaf532c782776d808ebced5b3e9cdec5ea87)
+<img width="299" alt="bba4805d6dca0a46a0f6" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/c47fcb7c-b3c6-4b12-bb13-76277fa8cbf4">
 
 **Displaying the time in English looks like this:**
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/54f3be802024dbcf06f4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220719T232414Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=08f8c39802b3d3e9a02e3e1988a83d33c4951461bbd2a60e67825218007b2133)
+<img width="328" alt="54f3be802024dbcf06f4" src="https://github.com/mohammedchakir/alx-backend/assets/129831433/2dd31436-e9de-4e16-95c6-420929a0c4e8">
 
 -   File: `app.py, templates/index.html, translations/en/LC_MESSAGES/messages.po, translations/fr/LC_MESSAGES/messages.po`
